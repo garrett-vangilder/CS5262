@@ -17,12 +17,4 @@ This model aims to provide a better estimate of natural disasters by the state f
 - Value of a true positive: true positive denotes that the ruling body was able to plan appropriately and dog-ear funds for relief, a savings of `(x)7_500_000`.
 - Value of a false positive: false positive denotes that the ruling body will mismanage funds. Funds could be diverted to an appropriate initiative by the end of the fiscal year; however, it is unlikely that the total value initially dog-eared for disaster relief will be used in the given calendar year, a potential liability of `x(7_500_000 * 0.33)`.
 - Value of a false negative: false negatives are more devastating than false positives, because now the funds have been allocated to other initiatives, and the given governing body will still need to pay for disaster relief, this is a liability of `(x)7_500_000`.   
-- Value of a true negative: this is the best case scenario, the model predicted fewer disasters and funds were able to be diverted from disaster relief to other initiatives. Since a municipality may be able to divert funds to business development or schools there is a net gain larger than the cost of a single disaster, a savings of `x(7_500_00 * 1.1)` 
-
-
-### Taylor's Comments
-
-* This project idea seems really cool, and the market value of saving money makes it a great topic to look into! 
-* Overall it seems like you've put a lot of time into researching this topic already and should be in a good place. 
-* "We will analyze the performance of this regression model through the mean squared error metric. This model will be considered a success if the prediction is within +/- 2 events for most states. Our data set includes disaster declarations for 2022. Our initial data set will become our validation set; we will create a test set that excludes events from 2022. Given the devastating financial impact of a single disaster, precision is paramount. " 
-    * The wording of this is a little confusing. Do you mean that you'll be training on past data to create a model that is able to predict 2022's disasters? 
+- Value of a true negative: this is the best case scenario, the model predicted fewer disasters and funds were able to be diverted from disaster relief to other initiatives. Since a municipality may be able to divert funds to business development or schools there is a net gain larger than the cost of a single disaster, a savings of `x(7_500_00 * 1.1)`
