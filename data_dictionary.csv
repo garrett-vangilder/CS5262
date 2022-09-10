@@ -1,24 +1,24 @@
-feature,description
-fema_declaration_string,codified identifier for disaster - declaration type + disaster number + state
-disaster_number,an incremented value used to designate an event
-state,US state or territory - formatted as XX
-declaration_type,DR("major disaster") or EM("emergency management") or FM("fire management")
-declaration_date,date of disaster declaration formatted YYYY-MM-DDTHH:MM:SSZ
-fy_declared,fiscal year of declaration, formatted YYYY
-incident_type,classification of incident type, example: "Flood", "Fire", "Earthquake", "Hurricane"
-declaration_title,generic identifier for incident typically human readable and categorical (eg. Hurricane Katrina)
-ih_program_declared,boolean value denotes if the "Individual and Households" program was declared
-ia_program_declared,boolean value denotes if the "Individual Assistance program" program was declared
-pa_program_declared,boolean value denotes if the "Public Assistance program" program was declared
-hm_program_declared,boolean value denotes if the "Hazard Mitigation program" program was declared
-incident_begin_date,date for the actual start of the incident (incidents could begin prior to disaster declaration) format: YYYY-MM-DDTHH:MM:SSZ
-incident_end_date,date for the actual end of the incident format: YYYY-MM-DDTHH:MM:SSZ
-disaster_closeout_date,date that specifies the financial closeout for the given incident, mostly NA format: YYYY-MM-DDTHH:MM:SSZ
-fips, codification of location of the event through a concatenation of fipsStateCode and fipsCountyCode (example: 47001 is Anderson County, TN v. 47037 being Davidson County, TN)
-place_code,internal codification of a location for FEMA - "99" + fipsCountyCode (example: 99037 is Davidson County, TN 037 is the county FIPS code)
-designated_area,human-readable string describing the affected area, could be "Statewide"
-declaration_request_number,identifier specific to the request to declare an incident a disaster
-last_ia_filing_date,date of the last Individual Assistance program filing format: YYYY-MM-DDTHH:MM:SSZ
-hash,MD5 Hash of the record
-id,unique record identifier
-last_refresh,date of the last refresh from FEMA format: YYYY-MM-DDTHH:MM:SSZ
+feature,description,type
+fema_declaration_string,codified identifier for disaster - declaration type + disaster number + state,string
+disaster_number,an incremented value used to designate an event,integer
+state,US state or territory - formatted as XX,string
+declaration_type,DR("major disaster") or EM("emergency management") or FM("fire management"),string
+declaration_date,date of disaster declaration formatted YYYY-MM-DDTHH:MM:SSZ,datetime
+fy_declared,fiscal year of declaration formatted YYYY,integer
+incident_type,classification of incident type example: "Flood" "Fire" "Earthquake"] "Hurricane",integer
+declaration_title,generic identifier for incident typically human readable and categorical (eg. Hurricane Katrina),string
+ih_program_declared,boolean value denotes if the "Individual and Households" program was declared,boolean
+ia_program_declared,boolean value denotes if the "Individual Assistance program" program was declared,boolean
+pa_program_declared,boolean value denotes if the "Public Assistance program" program was declared,boolean
+hm_program_declared,boolean value denotes if the "Hazard Mitigation program" program was declared,boolean
+incident_begin_date,date for the actual start of the incident (incidents could begin prior to disaster declaration) format: YYYY-MM-DDTHH:MM:SSZ,datetime
+incident_end_date,date for the actual end of the incident format: YYYY-MM-DDTHH:MM:SSZ,datetime
+disaster_closeout_date,date that specifies the financial closeout for the given incident mostly NA format: YYYY-MM-DDTHH:MM:SSZ,datetime
+fips, codification of location of the event through a concatenation of fipsStateCode and fipsCountyCode (example: 47001 is Anderson County TN v. 47037 being Davidson County TN),integer
+place_code,internal codification of a location for FEMA - "99" + fipsCountyCode (example: 99037 is Davidson County TN 037 is the county FIPS code),integer
+designated_area,human-readable string describing the affected area could be "Statewide",string
+declaration_request_number,identifier specific to the request to declare an incident a disaster,integer
+last_ia_filing_date,date of the last Individual Assistance program filing format: YYYY-MM-DDTHH:MM:SSZ,datetime
+hash,MD5 Hash of the record,string
+id,unique record identifier,GUID
+last_refresh,date of the last refresh from FEMA format: YYYY-MM-DDTHH:MM:SSZ,datetime
